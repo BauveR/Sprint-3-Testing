@@ -1,12 +1,14 @@
 // Exercise 1: Get the array of all directors.
 function getAllDirectors(array) {
 
-return array.map((movie) => movie.director);
+  return array.map((movie) => movie.director);
 
 }
 
 // Exercise 2: Get the films of a certain director
 function getMoviesFromDirector(array, director) {
+
+  return array.filter((movies) => movies.director === director);
  
 }
 
