@@ -39,12 +39,19 @@ function orderByYear(array) {
   let sorted = [...array].sort((a,b) => a.year - b.year || a.title.localeCompare (b.title));
   return sorted;
 
-
-
 }
 
 // Exercise 6: Calculate the average of the movies in a category
-function moviesAverageByCategory() {
+function moviesAverageByCategory(array, genere) {
+
+  let filter = array.filter((movies) => movies.genre === genere);
+  let average = filter.reduce(function (sum, movie) {
+          return sum + movie.score;
+      }, 0) / filter.length;
+  
+      return parseFloat(average.toFixed(2))
+
+
 
 }
 
