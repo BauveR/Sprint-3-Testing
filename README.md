@@ -37,11 +37,11 @@ npm test
 And last, open the generated `test-results.html` file with the "Live Server" VSCode extension to see test results.
 <br>
 
-## 🧪 Exercises
+## 🦾 Exercises
 
 ### 🟢 Level 1
 
-#### ✅ Exercise 1: Get All Directors
+#### 🦾​ Exercise 1: Get All Directors
 
 **Function:** `getAllDirectors(movies)`
 
@@ -52,11 +52,11 @@ Return an array containing the names of all directors from the movie dataset.
 Use the `.map()` method to extract the `director` property from each movie object returning a new array.
 
 **Test Screenshot:**  
-![Exercise 1 Test](./screenshots/getAllDirectors.png)
+✅![Exercise 1 Test](./screenshots/getAllDirectors.png)
 
 ---
 
-#### ✅ Exercise 2: Get Movies from a Specific Director
+#### 🦾​ Exercise 2: Get Movies from a Specific Director
 
 **Function:** `getMoviesFromDirector(movies, director)`
 
@@ -67,11 +67,11 @@ Return an array of movies managed by the specified director.
 Use the `.filter()` method to select movies where the `director` matches the given name.
 
 **Test Screenshot:**  
-![Exercise 2 Test](./screenshots/getMoviesFromDirector.png)
+✅![Exercise 2 Test](./screenshots/getMoviesFromDirector.png)
 
 ---
 
-#### ✅ Exercise 3: Calculate Average Score of a Director's Movies
+#### 🦾​ Exercise 3: Calculate Average Score of a Director's Movies
 
 **Function:** `moviesAverageOfDirector(movies, director)`
 
@@ -82,11 +82,11 @@ Calculate and return the average score of all movies directed by the specified d
 Use `.filter()` to get the director's movies, then `.reduce()` to sum their scores, and finally divide by the number of movies.
 
 **Test Screenshot:**  
-![Exercise 3 Test](./screenshots/moviesAverageDirector.png)
+✅![Exercise 3 Test](./screenshots/moviesAverageDirector.png)
 
 ---
 
-#### ✅ Exercise 4: Alphabetical Order of Movie Titles
+#### 🦾​ Exercise 4: Alphabetical Order of Movie Titles
 
 **Function:** `orderAlphabetically(movies)`
 
@@ -99,11 +99,11 @@ Use `.map()` to extract titles,
 `.slice()` to get the first 20.
 
 **Test Screenshot:**  
-![Exercise 4 Test](./screenshots/orderAlphabetically.png)
+✅![Exercise 4 Test](./screenshots/orderAlphabetically.png)
 
 ---
 
-#### ✅ Exercise 5: Order Movies by Year
+#### 🦾​ Exercise 5: Order Movies by Year
 
 **Function:** `orderByYear(movies)`
 
@@ -116,11 +116,11 @@ use the spreed to include into a new array
 Use `.sort()` with a custom comparator that first compares years and then titles.
 
 **Test Screenshot:**  
-![Exercise 5 Test](./screenshots/OrdeyByYear.png)
+✅![Exercise 5 Test](./screenshots/OrdeyByYear.png)
 
 ---
 
-#### ✅ Exercise 6: Average Score by Genre
+#### 🦾​ Exercise 6: Average Score by Genere
 
 **Function:** `moviesAverageByCategory(movies, genre)`
 
@@ -133,13 +133,13 @@ Use `.filter()` to obtain the movies by genere,
 Use `.reduce()` to sum their scores.
 
 **Test Screenshot:**  
-![Exercise 6 Test](./screenshots/moviesAverageByCategory.png)
+✅![Exercise 6 Test](./screenshots/moviesAverageByCategory.png)
 
 ---
 
 ### 🟡 Level 2
 
-#### ✅ Exercise 7: Convert Movie Durations to Minutes
+#### 🦾​ Exercise 7: Convert Movie Durations to Minutes
 
 **Function:** `hoursToMinutes(movies)`
 
@@ -151,13 +151,13 @@ Use a regular for  to iterate a spread array
 Use `.split()` to create a new array with two positions whith numbers (hour, minutes) then make the operations  and return the total 
 
 **Test Screenshot:**  
-![Exercise 7 Test](./screenshots/HousToMinutes.png)
+✅![Exercise 7 Test](./screenshots/HousToMinutes.png)
 
 ---
 
 ### 🔴 Level 3
 
-#### ✅ Exercise 8: Best Film of the Year
+#### 🦾​ Exercise 8: Best Film of the Year
 
 **Function:** `bestFilmOfYear(movies, year)`
 
@@ -169,7 +169,7 @@ Use `.filter()` to select movies from the given year,
 then `.sort()` to find the one with the highest score in the spreadind array.
 
 **Test Screenshot:**  
-![Exercise 8 Test](./screenshots/bestFilmOfTheYear.png)
+✅![Exercise 8 Test](./screenshots/bestFilmOfTheYear.png)
 
 ---
 
