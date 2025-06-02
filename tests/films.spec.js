@@ -331,7 +331,7 @@ describe('Function "moviesAverageByCategory"', () => {
         genre: ['Crime', 'Drama'],
         score: 8.9
       }
-    ], 'Quentin Tarantino')).toBe(8.56);
+    ], 'Drama')).toBe(8.57);
   });
 
 });
