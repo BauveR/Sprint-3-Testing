@@ -36,8 +36,8 @@ function orderAlphabetically(array) {
 // Exercise 5: Order by year, ascending
 function orderByYear(array) {
 
-  let sorted = [...array].sort((a,b) => a.year - b.year || a.title.localeCompare (b.title));
-  return sorted;
+ return [...array].sort((a,b) => a.year - b.year || a.title.localeCompare (b.title));
+
 
 }
 

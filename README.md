@@ -1,86 +1,190 @@
-# Sprint 3 IT Academy | Video management tool
+# 🎬 Sprint 3 | Video management tool
 
 ## Introduction
 
-A company in the audiovisual sector has asked us for a web application that will allow their employees to quickly find movies from a large database they have, since the process is currently done manually.
+This project is part of the IT Academy's Sprint 3 and focuses on building the core logic for a movie management web application. A company in the audiovisual sector has requested this application to help their employees quickly search through a large movie database, as the current process is done manually.
 
-You will be in charge of setting up the core of the application: all the logic of filtering and sorting of movies. You have 2 weeks to finish, which is how long this sprint lasts.
-
-<br>
-
-## Requirements
-
-
-1. Clone this repo
-```bash
-$ git clone https://github.com/IT-Academy-BCN/starter-code-frontend-sprint-3-movies
-```
-
-2. Unlink your repo from the itacademy repository
-```bash
-$ git remote rm origin
-```
-
-3. Link your repo to the repository you have to create in your github account
-```bash
-$ git remote add origin <your repo name!>
-```
+📌​ Key Objectives:
+The goal is to implement functions that filter, sort, and analyze the movie dataset while ensuring they pass tests using the Jest framework. You will be responsible for setting up the application's core logic, including all filtering and sorting functionalities.
 
 <br>
 
-## Submission
+## 🔗​ Installation
 
-1. Upon completion, run the following commands:
 
-```bash
-$ git add .
-$ git commit -m "Sprint Solution"
-$ git push origin master
-```
+1. Clone the repository:
 
-2. Create Pull Request.
+   ```bash
+   git clone https://github.com/BauveR/Sprint-3-Testing.git
 
-3. Upload the link to the virtual campus so that your mentor can correct it and give you feedback.
+2. Install dependencies:
 
+   ```bash
+   npm install
+   ```
+   ```
 
 
 <br>
 
-## Introduction
+### Running Tests
 
-The statement of the exercise is available on the virtual campus.
+To run the test suite and verify your implementations:
 
-<br>
-
-## Tests!
-
-
-```shell
-$ npm install
-$ npm run test:watch
+```bash
+npm test
 ```
-
 And last, open the generated `test-results.html` file with the "Live Server" VSCode extension to see test results.
-
-Apart from the statement, you will know exactly what you are asked to do by looking at the file `tests/films.spec.js`, all tests are already defined here!
-
 <br>
 
-## Instructions
+## 🧪 Exercises
 
-You have the following indications from the frontend responsible:
+### 🟢 Level 1
 
-- It is mandatory to implement all loops in ES6 (using map, reduce, filter and sort to manipulate arrays).
+#### ✅ Exercise 1: Get All Directors
 
-- As at the moment we don't consume data from a server using an API, we will work with data from the src/data.js archive. For the moment we will implement the logic using
-an array of information about 250 movies.
+**Function:** `getAllDirectors(movies)`
 
-- The implementation is about processing this array of movies, to display it as requested in each exercise.
+**Description:**  
+Return an array containing the names of all directors from the movie dataset.
 
-- The logic to implement will be placed in the src/films.js file.
+**Hint:**  
+Use the `.map()` method to extract the `director` property from each movie object returning a new array.
 
-- You don't need to show the result of each function on the screen. Your goal is to pass the tests.  More information on how to program oriented to pass tests at the end of the document.
+**Test Screenshot:**  
+![Exercise 1 Test](./screenshots/getAllDirectors.png)
 
-- Don't forget to include the capture of the test results in the virtual campus.
+---
 
+#### ✅ Exercise 2: Get Movies from a Specific Director
 
+**Function:** `getMoviesFromDirector(movies, director)`
+
+**Description:**  
+Return an array of movies managed by the specified director.
+
+**Hint:**  
+Use the `.filter()` method to select movies where the `director` matches the given name.
+
+**Test Screenshot:**  
+![Exercise 2 Test](./screenshots/getMoviesFromDirector.png)
+
+---
+
+#### ✅ Exercise 3: Calculate Average Score of a Director's Movies
+
+**Function:** `moviesAverageOfDirector(movies, director)`
+
+**Description:**  
+Calculate and return the average score of all movies directed by the specified director, parsed and rounded to two decimal places.
+
+**Hint:**  
+Use `.filter()` to get the director's movies, then `.reduce()` to sum their scores, and finally divide by the number of movies.
+
+**Test Screenshot:**  
+![Exercise 3 Test](./screenshots/moviesAverageDirector.png)
+
+---
+
+#### ✅ Exercise 4: Alphabetical Order of Movie Titles
+
+**Function:** `orderAlphabetically(movies)`
+
+**Description:**  
+Return an array of the first 20 movie titles sorted alphabetically.
+
+**Hint:**  
+Use `.map()` to extract titles, 
+`.sort()` to sort them, and 
+`.slice()` to get the first 20.
+
+**Test Screenshot:**  
+![Exercise 4 Test](./screenshots/orderAlphabetically.png)
+
+---
+
+#### ✅ Exercise 5: Order Movies by Year
+
+**Function:** `orderByYear(movies)`
+
+**Description:**  
+Return an array of movies sorted by year in ascending order. If two movies have the same year, sort them alphabetically by title.
+
+**Hint:**  
+
+use the spreed to include into a new array
+Use `.sort()` with a custom comparator that first compares years and then titles.
+
+**Test Screenshot:**  
+![Exercise 5 Test](./screenshots/OrdeyByYear.png)
+
+---
+
+#### ✅ Exercise 6: Average Score by Genre
+
+**Function:** `moviesAverageByCategory(movies, genre)`
+
+**Description:**  
+Calculate and return the average score of movies in the specified genre, rounded to two decimal places.
+
+**Hint:**  
+
+Use `.filter()` to obtain the movies by genere,
+Use `.reduce()` to sum their scores.
+
+**Test Screenshot:**  
+![Exercise 6 Test](./screenshots/moviesAverageByCategory.png)
+
+---
+
+### 🟡 Level 2
+
+#### ✅ Exercise 7: Convert Movie Durations to Minutes
+
+**Function:** `hoursToMinutes(movies)`
+
+**Description:**  
+Convert the `duration` property of each movie from a string format (e.g., "2h 34min") to an integer representing the total number of minutes.
+
+**Hint:**  
+Use a regular for  to iterate a spread array 
+Use `.split()` to create a new array with two positions whith numbers (hour, minutes) then make the operations  and return the total 
+
+**Test Screenshot:**  
+![Exercise 7 Test](./screenshots/HousToMinutes.png)
+
+---
+
+### 🔴 Level 3
+
+#### ✅ Exercise 8: Best Film of the Year
+
+**Function:** `bestFilmOfYear(movies, year)`
+
+**Description:**  
+Return the movie with the highest score from the specified year.
+
+**Hint:**  
+Use `.filter()` to select movies from the given year, 
+then `.sort()` to find the one with the highest score in the spreadind array.
+
+**Test Screenshot:**  
+![Exercise 8 Test](./screenshots/bestFilmOfTheYear.png)
+
+---
+
+## 📁 Directory Structure
+
+```
+S3-Testing-Level-1/
+├── src/
+│   └── index.js
+├── tests/
+│   └── films.spec.js
+├── screenshots/
+│   ├── exercise1.png
+│   ├── exercise2.png
+│   └── ...
+├── package.json
+└── README.md
+```
