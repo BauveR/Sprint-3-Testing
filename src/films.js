@@ -76,10 +76,14 @@ for(let i = 0; i < array.length; i++){
   newAray.push(movie);
 }
 return newAray;
+
 }
 
 // Exercise 8: Get the best film of a year
 function bestFilmOfYear(array, year) {
+
+movieYear
+
 
   
   
