@@ -82,11 +82,11 @@ return newAray;
 // Exercise 8: Get the best film of a year
 function bestFilmOfYear(array, year) {
 
-movieYear
+movieYear = array.filter((movie) => movie.year === year);
+let sorted = [...movieYear].sort((a,b) => a.score - b.score);
 
+return [sorted[sorted.length -1]];
 
-  
-  
 }
 
 
