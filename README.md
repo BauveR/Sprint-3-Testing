@@ -22,9 +22,6 @@ The goal is to implement functions that filter, sort, and analyze the movie data
    ```bash
    npm install
    ```
-   ```
-
-
 <br>
 
 ### Running Tests
@@ -188,3 +185,5 @@ S3-Testing-Level-1/
 ├── package.json
 └── README.md
 ```
+## ✨ Author
+Project developed as part of a JavaScript and web design learning exercise.
